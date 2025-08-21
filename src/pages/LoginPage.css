@@ -1,0 +1,162 @@
+/* 전체 배경 */
+.leftbackground {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #0A0F33 0%, #1E2D99 100%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 원들 제거 (circle 관련 스타일 삭제됨) */
+
+/* 로그인 컨테이너 */
+.login-container {
+  width: 100%;
+  max-width: 531px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+/* 제목 */
+.teamName {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.logtext {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* 입력창 */
+.emailin,
+.numberin {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  width: 95%;
+  height: 54px;
+  background: #D9D9D9;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.inputfield {
+  width: 100%;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: #000;
+  outline: none;
+}
+
+/* 로그인 옵션 */
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 5px 0 20px;
+}
+
+/* 로그인 유지 스타일 (체크박스 + 글씨) */
+.keep-logged-in {
+  display: flex;
+  white-space: nowrap;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  line-height: 27px;
+  color: #D9D9D9;
+}
+
+.checkbox {
+  margin-right: 8px;
+  accent-color: #ffffff;
+}
+
+/* 비밀번호 찾기 */
+.numberfind {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  color: #D9D9D9;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/*로그인 버튼 */
+.LoginButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  width: 100%;
+  background: #1E0338;
+  border-radius: 40px;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin: 15px 0 30px;
+  height: 54px;
+}
+
+/* 하단 링크 
+.bottom-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  color: #D9D9D9;
+}
+  */
+.bottom-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* 요소 사이 간격 */
+  font-family: 'Open Sans';
+  font-size: 16px;
+  color: #D9D9D9;
+  width: 100%; /* 전체 가로폭 사용 */
+  max-width: 531px; /* 로그인 컨테이너 최대 너비에 맞춤 */
+  margin: 0 auto; /* 가로 중앙 정렬 */
+}
+
+.signupbutton {
+  cursor: pointer;
+}
+
+
+.emailfind {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* 
+.line {
+  width: 2px;              
+  height: 20px;           
+  background-color: #d9d9d9;
+  transform: none;        
+  align-self: center;
+  margin: 0 15px;          
+}
+*/

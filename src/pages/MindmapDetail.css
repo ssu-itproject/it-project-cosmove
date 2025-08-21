@@ -1,0 +1,69 @@
+.mindmap-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #eef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center-node {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #4a6cf7;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 50%;
+  font-weight: bold;
+  text-align: center;
+  z-index: 10;
+}
+
+.subtask-node {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.subtask-label {
+  background: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  pointer-events: auto;
+  white-space: nowrap;
+}
+
+.line {
+  position: absolute;
+  height: 2px;
+  background: black;
+  left: 0;
+  top: 50%;
+  transform-origin: left center;
+  z-index: 1;
+}
+
+.add-subtask-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}

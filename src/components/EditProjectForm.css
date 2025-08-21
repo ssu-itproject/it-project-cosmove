@@ -1,0 +1,36 @@
+/* EditProjectForm.css 혹은 공통 modal 스타일 파일에 추가 */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3); /* 어두운 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* 💡 프로젝트 맵 위로 */
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  z-index: 10000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.modal label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal input,
+.modal select {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}

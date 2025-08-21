@@ -1,0 +1,142 @@
+/* 전체 배경 */
+.backgroundColor {
+  background: #0A0F33;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.backRectangle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 850px;
+  top: 150px;
+  background: #FFFFFF;
+  border-radius: 40px;
+}
+
+/* 캐릭터 박스 그리드 */
+.character-grid {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+/* 캐릭터 박스 */
+.character-box {
+  width: 100px;
+  height: 120px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  user-select: none;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* 캐릭터 이미지 */
+.character-image {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 6px;
+}
+
+/* 이름 */
+.character-name {
+  margin-top: auto;
+}
+
+/* 박스 상태별 색상 */
+.LockBox {
+  background: rgba(37, 37, 37, 0.7);
+  color: white;
+}
+
+.UnlockBox {
+  background: #D2D2D2;
+  color: black;
+}
+
+/* 잠금 해제 버튼 */
+.toggle-button {
+  margin-top: 10px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  background-color: #4caf50;
+}
+
+/* 왼쪽 이름 라벨 */
+.nameLine {
+  position: absolute;
+  width: 250px;
+  height: 1px;
+  background: #FFFFFF;
+  right: 780px;
+  top: 60%;
+}
+
+.name {
+  position: absolute;
+  right: 850px;
+  top: calc(50% + 20px); /* 선보다 위쪽 */
+  transform: translateY(-50%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFFFFF;
+  white-space: nowrap; /* 세로 정렬 방지 */
+}
+
+/* 캐릭터 디스플레이 */
+.character-display {
+  position: absolute;
+  left: 150px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.character-display .character-visual {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/* 이름 위에 캐릭터 이미지 표시 */
+.character-display-inside {
+  position: absolute;
+  right: 780px;
+  top: calc(50% - 130px); /* 이름보다 위쪽 */
+  transform: translateY(-50%);
+}
+
+.character-visual-inside {
+  width: 230px;
+  height: 230px;
+}

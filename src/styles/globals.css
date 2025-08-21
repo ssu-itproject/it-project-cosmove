@@ -1,0 +1,84 @@
+/* Global Styles - Pretendard Font */
+
+* {
+  font-family: 
+    "Pretendard Variable", 
+    "Pretendard", 
+    -apple-system, 
+    BlinkMacSystemFont, 
+    system-ui, 
+    Roboto, 
+    "Helvetica Neue", 
+    "Segoe UI", 
+    "Apple SD Gothic Neo", 
+    "Noto Sans KR", 
+    "Malgun Gothic", 
+    "Apple Color Emoji", 
+    "Segoe UI Emoji", 
+    "Segoe UI Symbol", 
+    sans-serif !important;
+}
+
+body {
+  font-family: 
+    "Pretendard Variable", 
+    "Pretendard", 
+    -apple-system, 
+    BlinkMacSystemFont, 
+    system-ui, 
+    Roboto, 
+    "Helvetica Neue", 
+    "Segoe UI", 
+    "Apple SD Gothic Neo", 
+    "Noto Sans KR", 
+    "Malgun Gothic", 
+    "Apple Color Emoji", 
+    "Segoe UI Emoji", 
+    "Segoe UI Symbol", 
+    sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Input and Form Elements */
+input, 
+textarea, 
+select, 
+button {
+  font-family: inherit !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit !important;
+}
+
+/* Common text elements */
+p, span, div, a, li, td, th, label {
+  font-family: inherit !important;
+}
+
+/* Reset any existing font settings */
+#root {
+  font-family: inherit !important;
+}
+
+/* Header 강제 색상 설정 */
+.header,
+.header *:not(.btn-base),
+.header h1,
+.header h2,
+.header h3,
+.header span:not(.btn-base span),
+.header p,
+.header div:not(.btn-base),
+.header [style*="color: white"]:not(.btn-base),
+.header [style*="color:#ffffff"]:not(.btn-base),
+.header [style*="color: #fff"]:not(.btn-base) {
+  color: #111827 !important;
+}
+
+/* Header 버튼들은 원래 색상 유지 */
+.header .btn-base {
+  color: inherit;
+}

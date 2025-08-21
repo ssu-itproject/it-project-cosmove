@@ -1,0 +1,196 @@
+/* TodoApp.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #0A0F33 0%, #1E2D99 100%);
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-wrapper {
+    max-width: 448px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.app-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.input-container {
+    margin-bottom: 24px;
+}
+
+.todo-input {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.todo-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.todo-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(147, 51, 234, 0.5);
+    border-color: transparent;
+}
+
+.todo-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.todo-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.todo-item.completed {
+    opacity: 0.7;
+}
+
+.todo-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    border-radius: 4px;
+    accent-color: #10b981;
+    cursor: pointer;
+}
+
+.todo-text {
+    color: white;
+    flex: 1;
+    margin-right: 12px;
+    transition: all 0.3s ease;
+}
+
+.todo-text.completed {
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.delete-btn {
+    background: #ef4444;
+    border: none;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+}
+
+.empty-state {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 32px;
+}
+
+.todo-stats {
+    margin-top: 32px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 16px;
+}
+
+.todo-stats p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .app-container {
+        padding: 16px;
+    }
+    
+    .todo-wrapper {
+        padding: 16px;
+    }
+    
+    .app-title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    
+    .todo-input {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+    
+    .todo-item {
+        padding: 10px;
+    }
+    
+    .todo-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-container {
+        padding: 8px;
+    }
+    
+    .todo-wrapper {
+        padding: 12px;
+    }
+    
+    .delete-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+    }
+}

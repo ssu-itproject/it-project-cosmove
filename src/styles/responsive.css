@@ -1,0 +1,197 @@
+/* Responsive Design & Media Queries */
+
+/* Mobile First Approach */
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  .header {
+    padding: 0 var(--spacing-md);
+    gap: var(--spacing-md);
+    height: 50px;
+  }
+  
+  .header h1 {
+    font-size: var(--font-size-base);
+    margin: 0;
+    color: var(--color-gray-900) !important;
+  }
+  
+  .header-buttons {
+    gap: var(--spacing-sm);
+  }
+  
+  .btn-base {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-sm);
+  }
+  
+  .modal {
+    margin: var(--spacing-md);
+    padding: var(--spacing-md);
+    width: calc(100vw - var(--spacing-xl));
+  }
+  
+  .card {
+    padding: var(--spacing-md);
+    margin: var(--spacing-sm);
+  }
+  
+  /* Hide some elements on mobile */
+  .hidden-mobile {
+    display: none;
+  }
+  
+  /* Stack elements vertically on mobile */
+  .mobile-stack {
+    flex-direction: column;
+  }
+  
+  .mobile-stack > * {
+    width: 100%;
+    margin-bottom: var(--spacing-sm);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    padding: 0 var(--spacing-lg);
+    gap: var(--spacing-lg);
+  }
+  
+  .btn-base {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-base);
+  }
+  
+  .modal {
+    width: 500px;
+    margin: var(--spacing-xl);
+  }
+  
+  .hidden-tablet {
+    display: none;
+  }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .header {
+    padding: 0 var(--spacing-2xl);
+    gap: var(--spacing-2xl);
+  }
+  
+  .modal {
+    width: 600px;
+  }
+  
+  .hidden-desktop {
+    display: none;
+  }
+  
+  /* Show elements only on desktop */
+  .desktop-only {
+    display: block;
+  }
+}
+
+/* Extra large devices (large desktops, 1280px and up) */
+@media (min-width: 1280px) {
+  .container-xl {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Responsive Typography */
+@media (max-width: 767px) {
+  :root {
+    --font-size-xs: 11px;
+    --font-size-sm: 13px;
+    --font-size-base: 14px;
+    --font-size-lg: 16px;
+    --font-size-xl: 18px;
+    --font-size-2xl: 20px;
+    --font-size-3xl: 24px;
+    --font-size-4xl: 28px;
+  }
+}
+
+/* Responsive Spacing */
+@media (max-width: 767px) {
+  :root {
+    --spacing-xs: 2px;
+    --spacing-sm: 4px;
+    --spacing-md: 8px;
+    --spacing-lg: 16px;
+    --spacing-xl: 20px;
+    --spacing-2xl: 32px;
+    --spacing-3xl: 48px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+  }
+  
+  .btn-base,
+  button {
+    display: none;
+  }
+  
+  .modal-overlay {
+    display: none;
+  }
+}
+
+/* High DPI / Retina Display Optimizations */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min--moz-device-pixel-ratio: 2),
+       only screen and (-o-min-device-pixel-ratio: 2/1),
+       only screen and (min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi),
+       only screen and (min-resolution: 2dppx) {
+  /* Optimize for retina displays */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Dark Mode Support (Optional) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-white: #1f2937;
+    --color-gray-50: #374151;
+    --color-gray-100: #4b5563;
+    --color-gray-200: #6b7280;
+    --color-gray-900: #f9fafb;
+    --color-gray-800: #f3f4f6;
+    --color-gray-700: #e5e7eb;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .skeleton {
+    animation: none;
+  }
+}

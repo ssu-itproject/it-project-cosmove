@@ -1,0 +1,147 @@
+.btn {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Variants */
+.btn--default {
+  background: #007bff;
+  color: white;
+}
+
+.btn--default:hover {
+  background: #0056b3;
+}
+
+.btn--back {
+  background: #6c757d;
+  color: white;
+}
+
+.btn--back:hover {
+  background: #545b62;
+}
+
+.btn--store {
+  background: #28a745;
+  color: white;
+}
+
+.btn--store:hover {
+  background: #1e7e34;
+}
+
+.btn--add {
+  background: #ffc107;
+  color: #212529;
+}
+
+.btn--add:hover {
+  background: #e0a800;
+}
+
+.btn--danger {
+  background: #dc3545;
+  color: white;
+}
+
+.btn--danger:hover {
+  background: #c82333;
+}
+
+.btn--secondary {
+  background: #f8f9fa;
+  color: #495057;
+  border: 1px solid #dee2e6;
+}
+
+.btn--secondary:hover {
+  background: #e2e6ea;
+}
+
+/* Sizes */
+.btn--small {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.btn--medium {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.btn--large {
+  padding: 14px 28px;
+  font-size: 18px;
+}
+
+/* Icon */
+.btn__icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .btn--medium {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+  
+  .btn--large {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .btn--small {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+    .btn--medium {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+  
+  .btn--large {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  .btn--small {
+    padding: 3px 6px;
+    font-size: 11px;
+  }
+}
